@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RD print — Comunicação Visual, Estandes e IA | Vila Velha/ES</title>
+<meta name="description" content="RD print: comunicação visual, estandes para feiras e eventos, personalização e soluções com IA. 20+ anos de experiência. Vila Velha/ES.">
+<meta property="og:title" content="RD print — Comunicação visual que vende">
+<meta property="og:description" content="Estandes, comunicação visual e IA para eventos e empresas. Vila Velha/ES.">
+<meta property="og:image" content="img/logo.png">
+<link rel="icon" href="img/mono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#1426B8; --blue2:#3A3FF8; --orange:#FF7A00;
+    --ink:#0B1030; --cloud:#EEF1FA; --line:#DDE2F2; --white:#fff; --muted:#5A618A;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.disp{font-family:'Sora',sans-serif;letter-spacing:-.02em;line-height:1.06}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-family:'Sora';font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange)}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-family:'Sora';font-weight:700;font-size:15px;padding:14px 24px;border-radius:999px;cursor:pointer;border:0;transition:transform .15s ease,box-shadow .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-wpp{background:var(--orange);color:#fff;box-shadow:0 10px 26px rgba(255,122,0,.34)}
+  .btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff}
+  .btn-ghost.dark{border-color:var(--line);color:var(--ink)}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  nav img{height:30px}
+  nav .links{display:flex;gap:26px;align-items:center}
+  nav .links a{font-size:14px;font-weight:500;color:var(--muted)}
+  nav .links a:hover{color:var(--blue)}
+  nav .navcta{font-family:'Sora';font-weight:700;font-size:13px;background:var(--blue);padding:9px 16px;border-radius:999px}
+  nav .links a.navcta{color:#cbd2f7}
+  nav .links a.navcta:hover{color:#fff}
+  .menu-links{display:none}
+  @media(max-width:820px){.menu-links{display:none}}
+
+  /* HERO */
+  .hero{position:relative;background:linear-gradient(160deg,#1A2BC4 0%,#1426B8 55%,#0E1C8C 100%);color:#fff;overflow:hidden;padding:78px 0 84px}
+  .hero .mono{position:absolute;right:-6%;top:48%;transform:translateY(-50%);width:54%;max-width:560px;opacity:.09;filter:brightness(0) invert(1);pointer-events:none}
+  .hero .inner{position:relative;z-index:2;max-width:680px}
+  .hero h1{font-size:clamp(36px,6.4vw,66px);font-weight:800;margin:18px 0 18px}
+  .hero h1 .o{color:#FFB36B}
+  .hero p.lead{font-size:clamp(16px,2.2vw,20px);color:#CBD2F7;max-width:40ch}
+  .hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+  .brands{margin-top:46px;border-top:1px solid rgba(255,255,255,.16);padding-top:22px}
+  .brands .lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#9AA4E0;margin-bottom:12px;font-family:'Sora';font-weight:600}
+  .brands .row{display:flex;flex-wrap:wrap;gap:10px 22px}
+  .brands .row span{font-family:'Sora';font-weight:700;font-size:15px;color:#E7EAFF;opacity:.92}
+
+  /* FRENTES */
+  .sec{padding:84px 0}
+  .sec.alt{background:var(--cloud)}
+  .sechead{max-width:680px;margin-bottom:44px}
+  .sechead h2{font-size:clamp(26px,4vw,40px);font-weight:700;margin:12px 0 14px}
+  .sechead p{color:var(--muted);font-size:16px}
+  .frentes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:34px 30px;position:relative;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 22px 50px rgba(20,38,184,.12)}
+  .card .topbar{position:absolute;left:0;top:0;height:5px;width:100%;background:linear-gradient(90deg,var(--blue),var(--blue2) 55%,var(--orange))}
+  .card .ico{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;background:var(--cloud);margin-bottom:18px}
+  .card .ico svg{width:28px;height:28px;stroke:var(--blue);fill:none;stroke-width:2}
+  .card h3{font-size:21px;font-weight:700;margin-bottom:10px}
+  .card p{color:var(--muted);font-size:15px;margin-bottom:16px}
+  .card ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:22px}
+  .card li{position:relative;padding-left:24px;font-size:14.5px}
+  .card li:before{content:'';position:absolute;left:0;top:8px;width:13px;height:13px;border-radius:50%;background:var(--orange);opacity:.18}
+  .card li:after{content:'';position:absolute;left:4px;top:11px;width:5px;height:5px;border-radius:50%;background:var(--orange)}
+  .card .link{font-family:'Sora';font-weight:700;font-size:14px;color:var(--blue);display:inline-flex;align-items:center;gap:7px}
+  .badge{display:inline-block;font-family:'Sora';font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);background:rgba(255,122,0,.1);padding:5px 11px;border-radius:999px;margin-bottom:14px}
+
+  /* PORTFOLIO */
+  .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .gal a{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#dfe3f2;display:block}
+  .gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .gal a:hover img{transform:scale(1.06)}
+  .gal a:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(11,16,48,.45));opacity:0;transition:opacity .3s}
+  .gal a:hover:after{opacity:1}
+  .galnote{margin-top:26px;color:var(--muted);font-size:14px;text-align:center}
+
+  /* PORQUE */
+  .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:10px}
+  .why .it{padding:26px;border-radius:16px;background:#fff;border:1px solid var(--line)}
+  .why .n{font-family:'Sora';font-weight:800;font-size:30px;color:var(--blue);display:block}
+  .why h4{font-family:'Sora';font-size:16px;margin:8px 0 6px}
+  .why p{font-size:14px;color:var(--muted)}
+
+  /* CTA FINAL */
+  .final{background:var(--ink);color:#fff;border-radius:26px;padding:54px 44px;text-align:center;position:relative;overflow:hidden}
+  .final .mono{position:absolute;left:-4%;bottom:-30%;width:34%;opacity:.07;filter:brightness(0) invert(1)}
+  .final h2{font-size:clamp(26px,4vw,42px);font-weight:800;margin-bottom:14px;position:relative}
+  .final h2 .o{color:var(--orange)}
+  .final p{color:#C9D0F6;max-width:46ch;margin:0 auto 28px;position:relative}
+  .final .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+
+  /* FLOAT WPP */
+  .float{position:fixed;right:18px;bottom:18px;z-index:60;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.28);transition:transform .15s}
+  .float:hover{transform:scale(1.08)}
+  .float svg{width:30px;height:30px;fill:#fff}
+
+  footer{background:#070B22;color:#aeb4d8;padding:50px 0 70px;font-size:14px}
+  footer .grid{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}
+  footer img{height:34px;margin-bottom:14px;filter:brightness(0) invert(1)}
+  footer h5{font-family:'Sora';color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+  footer a{display:block;color:#aeb4d8;margin-bottom:7px}
+  footer a:hover{color:#fff}
+  .copy{border-top:1px solid rgba(255,255,255,.1);margin-top:34px;padding-top:22px;color:#7d84ab;font-size:13px}
+
+  @media (prefers-reduced-motion:no-preference){
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.in{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <img src="img/logo.png" alt="RD print">
+    <div class="links">
+      <a href="#frentes">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#porque">Por que a RD</a>
+      <a class="navcta js-wpp" href="#" data-msg="Olá! Vim pelo site e quero um orçamento.">Pedir orçamento</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="mono" src="img/mono.png" alt="">
+  <div class="wrap inner">
+    <span class="eyebrow" style="color:#FFB36B">Comunicação visual · Estandes · IA — Vila Velha/ES</span>
+    <h1>Sua marca em grande escala, <span class="o">do projeto à montagem.</span></h1>
+    <p class="lead">Mais de 20 anos transformando empresas em presença que vende — em feiras, fachadas e telas. Três frentes, um padrão: alto.</p>
+    <div class="cta">
+      <a class="btn btn-wpp js-wpp" href="#" data-msg="Olá! Vim pelo site da RD print e quero um orçamento.">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M.06 24l1.68-6.13A11.9 11.9 0 1112 24a11.9 11.9 0 01-5.78-1.48L.06 24zm6.6-3.8l.37.22a9.86 9.86 0 005 1.37 9.9 9.9 0 10-9.9-9.9 9.84 9.84 0 001.51 5.26l.24.38-1 3.63 3.78-.96z"/><path d="M9.1 6.45c-.2-.46-.42-.47-.62-.48h-.53a1 1 0 00-.74.35 3.1 3.1 0 00-.96 2.3 5.36 5.36 0 001.13 2.85 12.3 12.3 0 004.7 4.15c2.34 1.13 2.82.9 3.33.86s1.64-.67 1.87-1.32.23-1.2.16-1.32-.25-.18-.53-.32-1.64-.81-1.9-.9-.44-.14-.62.14-.71.9-.87 1.08-.32.21-.6.07a7.86 7.86 0 01-2.3-1.42 8.66 8.66 0 01-1.6-1.98c-.17-.29 0-.44.13-.58s.28-.32.42-.49a1.9 1.9 0 00.28-.46.51.51 0 00-.02-.49c-.07-.14-.62-1.54-.87-2.1z"/></svg>
+        Orçamento no WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="#portfolio">Ver trabalhos</a>
+    </div>
+    <div class="brands">
+      <div class="lbl">Marcas que já confiaram</div>
+      <div class="row">
+        <span>Volvo</span><span>Fiat</span><span>Toyota</span><span>Chevrolet</span><span>Hyundai</span><span>GWM</span><span>BYD</span><span>Citroën</span><span>EcoPower</span><span>Budny</span><span>Semex</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 3 FRENTES -->
+<section class="sec" id="frentes">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="eyebrow">O que a RD faz</span>
+      <h2>Três frentes, uma operação completa.</h2>
+      <p>Você fala com um só parceiro — da criação à instalação. Sem terceirizar a confusão pra cima de você.</p>
+    </div>
+    <div class="frentes">
+
+      <div class="card reveal">
+        <div class="topbar"></div>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 3h18v14H3z"/><path d="M3 9h18M8 21h8M12 17v4"/></svg></div>
+        <h3>Comunicação Visual</h3>
+        <p>Sua empresa visível onde o cliente olha — com acabamento de alto padrão e prazo que você pode confiar.</p>
+        <ul>
+          <li>Fachadas, letras caixa e ACM</li>
+          <li>Adesivos, plotagem e envelopamento de frota</li>
+          <li>Placas de obra, tapumes e sinalização</li>
+          <li>Banners, lonas, cartões e impressos</li>
+        </ul>
+        <a class="link js-wpp" href="#" data-msg="Olá! Quero um orçamento de comunicação visual.">Pedir orçamento →</a>
+      </div>
+
+      <div class="card reveal">
+        <div class="topbar"></div>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+        <h3>Estandes & Personalização</h3>
+        <p>Do projeto 3D à montagem no piso da feira. Estande que para o visitante e valoriza a marca.</p>
+        <ul>
+          <li>Projeto e montagem de estandes para feiras</li>
+          <li>Modelos Essencial, Intermediário e Premium</li>
+          <li>Ativações, balcões e cenografia de marca</li>
+          <li>Render fotorrealista antes de produzir</li>
+        </ul>
+        <a class="link js-wpp" href="#" data-msg="Olá! Quero um estande para um evento/feira.">Quero um estande →</a>
+      </div>
+
+      <div class="card reveal">
+        <div class="topbar"></div>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 014 4v2a4 4 0 01-8 0V6a4 4 0 014-4z"/><path d="M5 11v1a7 7 0 0014 0v-1M12 19v3M8 22h8"/></svg></div>
+        <span class="badge" style="margin-top:2px">Novidade</span>
+        <h3>Soluções com IA</h3>
+        <p>Tecnologia que faz seu estande trabalhar sozinho — captura lead, atende no WhatsApp e conta o público.</p>
+        <ul>
+          <li>Estande Inteligente: totem + agente de IA no WhatsApp</li>
+          <li>Captura e qualificação de leads com CRM</li>
+          <li>FluxCount: contagem de público com analytics</li>
+          <li>Sem infraestrutura física: ativa rápido</li>
+        </ul>
+        <a class="link js-wpp" href="#" data-msg="Olá! Quero saber do Estande Inteligente / IA.">Conhecer a IA →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="sec alt" id="portfolio">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="eyebrow">Portfólio</span>
+      <h2>Trabalhos que falam por si.</h2>
+      <p>Estandes e projetos entregues para montadoras, agro, pecuária e energia em feiras de grande porte.</p>
+    </div>
+    <div class="gal" id="gal"></div>
+    <p class="galnote">Cada projeto acima foi entregue com produção própria de visual e montagem coordenada no local.</p>
+  </div>
+</section>
+
+<!-- POR QUE -->
+<section class="sec" id="porque">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="eyebrow">Por que a RD</span>
+      <h2>Experiência que vira tranquilidade.</h2>
+    </div>
+    <div class="why">
+      <div class="it reveal"><span class="n">20+</span><h4>Anos de estrada</h4><p>Duas décadas em comunicação visual, estandes e grandes ativações de marca.</p></div>
+      <div class="it reveal"><span class="n">3</span><h4>Frentes integradas</h4><p>Visual, estande e IA com um só responsável — você não vira gerente de fornecedor.</p></div>
+      <div class="it reveal"><span class="n">100%</span><h4>Foco no prazo</h4><p>Produção e montagem coordenadas pra entregar antes da porta da feira abrir.</p></div>
+      <div class="it reveal"><span class="n">RD</span><h4>Alto padrão</h4><p>Acabamento de marca grande, com o atendimento direto de quem assina o projeto.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="final reveal">
+      <img class="mono" src="img/mono.png" alt="">
+      <h2>Vamos colocar sua marca <span class="o">em evidência?</span></h2>
+      <p>Me manda uma foto do local ou conta o que você precisa. Em seguida já te passo uma ideia e um orçamento.</p>
+      <div class="cta">
+        <a class="btn btn-wpp js-wpp" href="#" data-msg="Olá! Vim pelo site e quero um orçamento da RD print.">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M.06 24l1.68-6.13A11.9 11.9 0 1112 24a11.9 11.9 0 01-5.78-1.48L.06 24z"/></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div style="max-width:280px">
+        <img src="img/logo.png" alt="RD print">
+        <p>Comunicação visual, estandes e soluções com IA. Atendemos Vila Velha, Vitória, Serra e toda a Grande Vitória/ES.</p>
+      </div>
+      <div>
+        <h5>Serviços</h5>
+        <a href="#frentes">Comunicação Visual</a>
+        <a href="#frentes">Estandes & Personalização</a>
+        <a href="#frentes">Soluções com IA</a>
+      </div>
+      <div>
+        <h5>Navegar</h5>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#porque">Por que a RD</a>
+        <a class="js-wpp" href="#" data-msg="Olá! Vim pelo site.">Falar no WhatsApp</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="js-wpp" href="#">WhatsApp</a>
+        <a href="#">Vila Velha — ES</a>
+      </div>
+    </div>
+    <div class="copy">© <span id="yr"></span> RD print — Comunicação visual que vende. · Vila Velha/ES</div>
+  </div>
+</footer>
+
+<a class="float js-wpp" href="#" aria-label="WhatsApp" data-msg="Olá! Vim pelo site da RD print.">
+  <svg viewBox="0 0 24 24"><path d="M.06 24l1.68-6.13A11.9 11.9 0 1112 24a11.9 11.9 0 01-5.78-1.48L.06 24zm6.6-3.8l.37.22a9.86 9.86 0 005 1.37 9.9 9.9 0 10-9.9-9.9 9.84 9.84 0 001.51 5.26l.24.38-1 3.63 3.78-.96z"/><path d="M9.1 6.45c-.2-.46-.42-.47-.62-.48h-.53a1 1 0 00-.74.35 3.1 3.1 0 00-.96 2.3 5.36 5.36 0 001.13 2.85 12.3 12.3 0 004.7 4.15c2.34 1.13 2.82.9 3.33.86s1.64-.67 1.87-1.32.23-1.2.16-1.32-.25-.18-.53-.32-1.64-.81-1.9-.9-.44-.14-.62.14-.71.9-.87 1.08-.32.21-.6.07a7.86 7.86 0 01-2.3-1.42 8.66 8.66 0 01-1.6-1.98c-.17-.29 0-.44.13-.58s.28-.32.42-.49a1.9 1.9 0 00.28-.46.51.51 0 00-.02-.49c-.07-.14-.62-1.54-.87-2.1z"/></svg>
+</a>
+
+<script>
+  /* ===========================================================
+     >>> TROQUE AQUI O SEU NÚMERO DE WHATSAPP <<<
+     Formato: 55 + DDD + número, só dígitos. Ex.: 5527999998888
+  ============================================================ */
+  var WHATSAPP = "5527992754940";
+
+  document.querySelectorAll('.js-wpp').forEach(function(el){
+    var msg = el.getAttribute('data-msg') || 'Olá! Vim pelo site da RD print.';
+    el.setAttribute('href', 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg));
+    el.setAttribute('target','_blank'); el.setAttribute('rel','noopener');
+  });
+
+  /* Galeria: monta as 19 fotos */
+  var gal = document.getElementById('gal');
+  for (var i=1; i<=19; i++){
+    var n = (i<10?'0':'')+i;
+    var a = document.createElement('a');
+    a.href = 'img/portfolio-'+n+'.jpg';
+    a.target = '_blank'; a.rel='noopener';
+    a.innerHTML = '<img loading="lazy" src="img/portfolio-'+n+'.jpg" alt="Projeto RD print '+n+'">';
+    gal.appendChild(a);
+  }
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* Reveal on scroll */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
